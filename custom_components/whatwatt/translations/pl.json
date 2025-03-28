@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Połącz z urządzeniem WhatWatt",
+        "description": "Skonfiguruj integrację WhatWatt do monitorowania licznika energii elektrycznej.",
+        "data": {
+          "mqtt_topic": "Temat MQTT",
+          "device_ip": "Adres IP urządzenia",
+          "name": "Nazwa"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie udało się połączyć",
+      "invalid_mqtt_topic": "Nieprawidłowy format tematu MQTT",
+      "invalid_ip": "Nieprawidłowy format adresu IP"
+    },
+    "abort": {
+      "already_configured": "Urządzenie jest już skonfigurowane"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "power_in": {
+        "name": "Moc pobierana"
+      },
+      "power_out": {
+        "name": "Moc oddawana"
+      },
+      "energy_in": {
+        "name": "Energia pobrana"
+      },
+      "energy_out": {
+        "name": "Energia oddana"
+      },
+      "voltage_l1": {
+        "name": "Napięcie L1"
+      },
+      "voltage_l2": {
+        "name": "Napięcie L2"
+      },
+      "voltage_l3": {
+        "name": "Napięcie L3"
+      }
+    },
+    "button": {
+      "configuration": {
+        "name": "Konfiguracja"
+      }
+    }
+  }
+}

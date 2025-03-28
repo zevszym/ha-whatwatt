@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to WhatWatt device",
+        "description": "Set up WhatWatt integration to monitor your electricity meter.",
+        "data": {
+          "mqtt_topic": "MQTT Topic",
+          "device_ip": "Device IP Address",
+          "name": "Name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_mqtt_topic": "Invalid MQTT topic format",
+      "invalid_ip": "Invalid IP address format"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}
